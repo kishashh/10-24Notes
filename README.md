@@ -53,9 +53,23 @@ LinkedHashSet<String> llm = new LinkedHashSet<>();
 * HashMap adds randomly
 
 
-
-
-
-
-
 ## 10/27
+
+* `public static <T> List<T> asList(T... a)`: This is the format for generic methods
+* `public class ClassName<T>`: Can also be used with Classes
+* T is not always the generic letter used<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * `E` - Element<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * `K` - Key<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * `N` - Number<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * `T` - Type<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * `V` - Value
+* Cannot construct objects of type E:
+```java
+E myData = new E();  // illegal code
+E[] elements = new E[capacity]; // illegal
+E[] elements = (E[]) new Object[capacity]; // Legal
+```
+
+
+
+
